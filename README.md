@@ -1,11 +1,11 @@
-# Advanced Scientific Calculator (Python)
+# Advanced Scientific Calculator (Python - CLI)
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/tests-passing-brightgreen.svg)](test_sci_calc.py)
 
 A clean, interactive command-line scientific calculator built in Python.  
-It supports basic arithmetic, logarithmic calculations, factorials, trigonometric and reciprocal trigonometric functions, exponents, and comprehensive input validation.
+It shares the same core math engine as [AdvSciCalcGUI](https://github.com/ranjithbrs/AdvSciCalcGUI), supporting basic arithmetic, logarithms, factorials, trigonometric/reciprocal trigonometric functions, inverse trigonometry, exponents, and comprehensive input validation.
 
 ---
 
@@ -18,17 +18,18 @@ It supports basic arithmetic, logarithmic calculations, factorials, trigonometri
 ## ✨ Features
 - **Basic Operations**: Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`)
 - **Advanced Math**: Power (`**`), Square Root (`sqrt`), Modulus (`%`), Floor Division (`//`)
-- **Logarithms & Factorials**: Logarithm (`log` - supports decimal & fractional bases), Factorial (`!`)
+- **Logarithms & Factorials**: Logarithm (`log` - base 10 / custom), Natural Logarithm (`ln`), Factorial (`!`)
 - **Exponential**: Exponential function (`exp` - $e^x$)
 - **Trigonometric Functions**: Sine (`sin`), Cosine (`cos`), Tangent (`tan`)
-- **Reciprocal Trigonometric Functions**: Secant (`sec`), Cosecant (`cosec`), Cotangent (`cot`)
+- **Reciprocal Trigonometry**: Secant (`sec`), Cosecant (`cosec`), Cotangent (`cot`)
+- **Inverse Trigonometry**: Arcsine (`asin`), Arccosine (`acos`), Arctangent (`atan`)
 - **Robust Error Handling**: Handles division by zero, invalid log bases, negative roots, undefined trig limits, and non-numeric inputs cleanly without crashing.
 
 ---
 
 ## 📋 Operation Menu Options
 
-When you run the calculator, you can select from the following options:
+When you run the calculator CLI, you can select from the following options:
 
 | Option | Operation | Example Input |
 | :--- | :--- | :--- |
@@ -40,6 +41,7 @@ When you run the calculator, you can select from the following options:
 | `sqrt` | Square Root | `16` $\rightarrow$ `4.0` |
 | `%` | Modulus | `10` and `3` $\rightarrow$ `1.0` |
 | `log` | Logarithm | Value `8`, Base `2` $\rightarrow$ `3.0` |
+| `ln` | Natural Logarithm ($e$) | Value `2.718282` $\rightarrow$ `1.0` |
 | `!` | Factorial | `5` $\rightarrow$ `120` |
 | `//` | Floor Division | `10` and `3` $\rightarrow$ `3.0` |
 | `sin` | Sine (degrees) | `90` $\rightarrow$ `1.0` |
@@ -49,6 +51,9 @@ When you run the calculator, you can select from the following options:
 | `sec` | Secant (degrees) | `0` $\rightarrow$ `1.0` |
 | `cosec` | Cosecant (degrees) | `90` $\rightarrow$ `1.0` |
 | `cot` | Cotangent (degrees) | `45` $\rightarrow$ `1.0` |
+| `asin` | Arcsine | `1` $\rightarrow$ `90.0` |
+| `acos` | Arccosine | `1` $\rightarrow$ `0.0` |
+| `atan` | Arctangent | `1` $\rightarrow$ `45.0` |
 | `exit` | Exit Application | Ends the interactive session |
 
 ---
@@ -58,7 +63,7 @@ When you run the calculator, you can select from the following options:
 ### Prerequisites
 - Python 3.8 or higher installed on your system.
 
-### Running the Calculator
+### Running the Calculator CLI
 1. Clone the repository:
    ```bash
    git clone https://github.com/ranjithbrs/advanced_calculator_python.git
@@ -73,7 +78,7 @@ When you run the calculator, you can select from the following options:
 
 ## 🧪 Running Unit Tests
 
-The repository includes a automated unit test suite covering all 17 operations and edge cases.
+The repository includes an automated unit test suite covering all operations and edge cases.
 
 To execute the test suite, run:
 ```bash
