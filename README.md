@@ -6,7 +6,18 @@
 [![Unit Tests: 100% Passing](https://img.shields.io/badge/Unit%20Tests-100%25%20Passing-success?style=for-the-badge&logo=checkmarx&logoColor=white)](test_sci_calc.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
 
-> A modular, interactive command-line scientific calculator built in Python. Serves as both a standalone console calculator and an importable mathematical computation engine with complete unit test coverage, domain validation, and zero external dependencies.
+> 🌟 **A fast, menu-driven scientific calculator that runs right inside your terminal without any extra software!**
+
+---
+
+## 💡 What is this Project in 30 Seconds? (In Plain English)
+
+Have you ever needed to do quick scientific math while working in a terminal or on a server, without opening a web browser or searching for a physical calculator?
+
+This project is a **smart, menu-driven calculator in Python**:
+- 🔢 **Simple Numbered Menu:** Just pick an operation by number (e.g., `1` for Addition, `5` for Powers, `7` for Square Root, `11` for Trigonometry).
+- ⚡ **Instant & Accurate:** Type your numbers and get exact results with up to 6 decimal precision in milliseconds.
+- 🛡️ **Zero Crashes:** Built-in safeguards protect against division by zero, invalid roots, or complex numbers so the program never crashes.
 
 ---
 
@@ -17,6 +28,7 @@
 ---
 
 ## 📑 Table of Contents
+- [What is this Project?](#-what-is-this-project-in-30-seconds-in-plain-english)
 - [Architecture & Execution Workflow](#-architecture--execution-workflow)
 - [Key Features](#-key-features)
 - [Operation Menu & Supported Functions](#-operation-menu--supported-functions)
