@@ -153,7 +153,7 @@ python -m unittest test_sci_calc.py -v
 
 Output:
 ```text
-Ran 8 tests in 0.001s
+Ran 12 tests in 0.001s
 
 OK
 ```
