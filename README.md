@@ -180,6 +180,17 @@ Looking for a desktop application with an LCD display, mouse keypad, calculation
 
 ---
 
+## 💡 Project Scope & Learning Architecture
+
+This repository is maintained as a focused, lightweight **learning & reference application** demonstrating:
+- **Clean Functional Architecture**: Pure mathematical functions isolated from CLI input handling and presentation layers.
+- **Defensive Input Handling**: Robust validation guarding against divide-by-zero, negative square roots, undefined trigonometric bounds, and non-numeric terminal input.
+- **Automated Verification**: Full test suite built on Python's native `unittest` framework ensuring zero regression across arithmetic and scientific operations.
+
+For the companion desktop application featuring an interactive dark-themed LCD GUI with double-click calculation history and PyInstaller distribution, explore [AdvSciCalcGUI](https://github.com/ranjithbrs/AdvSciCalcGUI).
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
